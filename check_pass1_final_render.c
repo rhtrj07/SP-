@@ -1,18 +1,16 @@
+// for basic i/o functions
 #include<stdio.h>
+// for console i/o  functions
 #include<conio.h>
+// for string functions
 #include<string.h>
+// for using atoi and itoa functions
 #include<stdlib.h>
-/*
-int atoi(char* str) 
-{ 
-	int res = 0; 
-	for (int i = 0; str[i] != '\0'; ++i) 
-	res = res * 10 + str[i] - '0'; 
-	return res;
-} */
+
 int main()
 {	
 	char opcode[10],operand[10],label1[10],label[10],code[10][10],ch,c; char mnemonic[10][10]={"START","LDA","ADD","MUL","SUB","STA","END"};
+	// opcode, operande, label - for input assembly language program
 	int locctr,start,len,i=0,j=0,address;
 	FILE *fp1,*fp2,*fp3,*fp4;
 	//clrscr();
